@@ -22,8 +22,31 @@
 Проверить, чтобы все работало без ошибок в консоли */
 'use strict';
 
-let numberOfFilms = 5;
-prompt('Сколько фильмов вы уже посмотрели?');
-console.log(numberOfFilms);
+// задание 1
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?','');
+
+//задание 2     
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+//задание 3
+const a = prompt ('Один из последних просмотренных фильмов?',''), 
+      b = prompt ('На сколько оцените его?',''),
+      c = prompt ('Один из последних просмотренных фильмов?',''),
+      d = prompt ('На сколько оцените его?','');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+
+
+
+
+
+
 
 
